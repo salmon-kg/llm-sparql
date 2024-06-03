@@ -7,8 +7,8 @@ This research tackles the complex issue of Named Entity Disambiguation (NED) by 
 Methodology:
 -
 <h2 align="center">
-  Flow of Annotation Process:
-  <img align="center" src="gpt-sparql.png" alt="...">
+  Entity Linking and Disambiguation Pipeline
+  <img align="center" src="GPT-SPARQL.png" alt="...">
 </h2>
 
 CODE FILES:
