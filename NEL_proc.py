@@ -14,9 +14,8 @@ import csv
 import json
 import os
 
-path = os.path.expanduser('~/Desktop/WikiEL/')
 # Path to your JSON file
-file_path = '/Users/salman/Desktop/WikiEL/test.json'
+file_path = './data/test.json'
 P,R,F = 0,0,0
 n=0
 # Reading the JSON data from the file
@@ -161,17 +160,6 @@ with open(file_path, 'r') as file:
             R+=1
             
         candids = n, candidates
-        
-        with open(path + 'SPARQL_CANDIDS4.csv', 'a') as file:
-              writer = csv.writer(file, delimiter=',')
-              writer.writerow(candids)
-        
-        
-        # output = n, query_text, entity_label, wiki_class_label, wiki_class, c_id , entity_uri      
-        # with open(path + 'gpt4-class-SparQLN1.csv', 'a') as file:
-        #         writer = csv.writer(file, delimiter=',')
-        #         writer.writerow(output)
-        
         
 
 print("Performance for Named Entity Mapping With Wikidata")
