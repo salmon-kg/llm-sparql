@@ -1,0 +1,113 @@
+				Prompt_1 (URI)
+
+
+Given the referenced text and examples below, What is the Wikidata ID of the label '{Label}'\n
+
+Reference Text: {text}\n
+
+Example 1: \n
+  Text: Besides CSIRO, Australian National University is located in Canberra.\n
+  Label: Australian National University\n
+  Wikidata Class: University
+  Wikidata ID: Q127990\n
+  
+Example 2:\n  
+  Text: Mantell was born in Bridgwater, Somerset, and studied at the University of Bath.\n
+  Label: Bridgwater\n
+  Wikidata Class: Town
+  Wikidata ID: Q914015\n
+				
+				
+				
+				Prompt_2 (Class and URI)
+
+Return the wikidata ID of '{label}' where the wikidata class is '{wiki_class}'. Your response should include just ID i.e., Q123456.\n
+
+Reference Sentence: {text}\n
+
+Example 1: \n
+  Text: Besides CSIRO, Australian National University is located in Canberra.\n
+  Label: Australian National University\n
+  Wikidata Class: University\n
+  Wikidata ID: Q127990\n
+  
+Example 2:\n  
+  Text: Mantell was born in Bridgwater, Somerset, and studied at the University of Bath.\n
+  Label: Bridgwater\n
+  Wikidata Class: Town\n
+  Wikidata ID: Q914015\n
+
+  
+  
+				Prompt_3 (Correct/Accurate URI)
+
+
+Given the referenced text and examples below, return the correct Wikidata ID of entity label '{Label}'\n
+
+Reference Text: {text}\n
+
+Example 1: \n
+  Text: Besides CSIRO, Australian National University is located in Canberra.\n
+  Entity Label: Australian National University\n
+  Wikidata Class: University\n
+  Wikidata ID: Q127990\n
+  
+Example 2:\n  
+  Text: Mantell was born in Bridgwater, Somerset, and studied at the University of Bath.\n
+  Entity Label: Bridgwater\n
+  Wikidata Class: Town\n
+  Wikidata ID: Q914015\n
+ 
+
+
+
+				Prompt_4 (Class Extraction)
+
+
+Given the referenced text below, return Wikidata class of entity '{entity_label}'.\n
+
+Reference Text: {text}\n
+
+
+				Prompt_5 (URI, based on Class)
+
+
+Return the wikidata ID of '{entity_label}' of class '{wikidata_class}'.\n
+
+
+				Prompt_6 (URI based on Referenced Information)
+
+
+Given the context below, return the wikidata ID of '{entity_label}'\n
+Context: \n
+Reference Text: {text}\n
+Label: {Entity_Label}\n
+Class: {Wikidata_Class}\n
+
+
+				Prompt_7 (URI based on Referenced Information)
+
+
+Given the reference information and examples below, return the wikidata ID of '{entity_label}'\n
+Reference information: \n
+Reference Text: {text}\n
+Entity Label: {Entity_Label}\n
+Entity Class: {Wikidata_Class}\n
+
+Example 1: \n
+  Text: Besides CSIRO, Australian National University is located in Canberra.\n
+  Entity Label: Australian National University\n
+  Entity Class: University\n
+  Wikidata ID: Q127990\n
+  
+Example 2:\n  
+  Text: Mantell was born in Bridgwater, Somerset, and studied at the University of Bath.\n
+  Entity Label: Bridgwater\n
+  Entity Class: Town\n
+  Wikidata ID: Q914015\n
+
+
+			BASIC FORMAL ONTOLOGY (BFO)
+		How can this be incorporated into the process of prompt engineering?
+		
+		
