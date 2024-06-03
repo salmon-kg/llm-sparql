@@ -10,17 +10,10 @@ import requests
 import json
 import openai
 
-
+# Your API key - Replace with your actual API key
 openai.api_key = "PUT YOUR KEY HERE"
 
 def gpt_query_class(label,text):
-    # API endpoint - Replace with the actual API endpoint URL
-    #endpoint_url = "https://api.openai.com/v1/completions"
-    
-    # Your API key - Replace with your actual API key
-    #openai.api_key = "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"
-
-
 
     completion = openai.ChatCompletion.create(
         #model="gpt-3.5-turbo",
@@ -34,13 +27,6 @@ def gpt_query_class(label,text):
     return response
 
 def gpt_query_class1(label,text):
-    # API endpoint - Replace with the actual API endpoint URL
-    #endpoint_url = "https://api.openai.com/v1/completions"
-    
-    # Your API key - Replace with your actual API key
-    #openai.api_key = "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"
-
-
 
     completion = openai.ChatCompletion.create(
         #model="gpt-3.5-turbo",
@@ -54,11 +40,6 @@ def gpt_query_class1(label,text):
     return response
 
 def gpt_query_uri(label,text):
-    # API endpoint - Replace with the actual API endpoint URL
-    #endpoint_url = "https://api.openai.com/v1/completions"
-    
-    # Your API key - Replace with your actual API key
-
 
     completion = openai.ChatCompletion.create(
         #model="gpt-3.5-turbo",
