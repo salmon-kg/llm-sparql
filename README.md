@@ -26,6 +26,13 @@ Directories:
 - Data: Should download dataset in this directory. The link to the source paper is included.
 - LLMs: Should download required llms in this directory. The links of applied variants of LLaMA model are included.
 
+Poster:
+-
+<h2 align="center">
+  Entity Linking and Disambiguation Pipeline
+  <img align="center" src="LLM-SPARQL Poster.pdf" alt="...">
+</h2>
+
 Citation:
 -
 - Citation will be updated soon.
